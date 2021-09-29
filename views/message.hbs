@@ -1,0 +1,20 @@
+
+    <form action="/search" method="post">
+    <input name="text" type="search"  placeholder="search something..." autofocus></input>
+    </form>
+
+{{#each chats}}
+<h1>{{this.text}}</h1>
+{{/each}}
+<h1>{{chats.text}}</h1>
+
+<style>
+    
+    input {
+        margin: 10px;
+        border-radius: 10px;
+        font-family: cursive;
+        font-size: 500;
+        padding: 10px;
+    }
+</style>

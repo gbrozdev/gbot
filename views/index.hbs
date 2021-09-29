@@ -1,0 +1,90 @@
+<div class="head">
+  <a href="/search">  <h1>gbot</h1> </a>
+{{!-- halo bitch..welcome to this bot iam gbot..  --}}
+{{!-- ok sir...thankyou..for youffr welcome.. --}}
+    <div class="m-body">
+        {{#each chats}}
+        <h5>{{this.text}} </h5>
+        <h6>{{this.response}} </h6>
+        {{/each}}
+        <h4 id="new"></h4>
+    </div>
+
+
+</div>
+<form action="/chat-post" method="post">    
+<div class="row">
+    <input name="text" type="search"  placeholder="ask something..." autofocus></input>
+    <button class="btn btn-success " type="submit">></button>
+</div>
+</form>
+
+
+<style>
+    h4 {
+        color: white;
+    }
+    .m-body h6 {
+        color: black;
+        background-color: bisque;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 80%;
+        font-size: 17px;
+    }
+
+    .m-body h5 {
+        font-size: 17px;
+        color: black;
+        background-color: rgb(255, 140, 0);
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 80%;
+        margin-left: 20%;
+    }
+
+    .m-body {
+        width: 90%;
+        height: 60vh;
+        margin: 5%;
+        padding: 10px;
+        border-radius: 1rem;
+        overflow-y: scroll;
+    }
+
+    .m-body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .head {
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    input {
+        margin: 10px;
+        border-radius: 10px;
+        font-family: cursive;
+        font-size: 500;
+        padding: 10px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 60px;
+    }
+</style>
