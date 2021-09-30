@@ -29,7 +29,7 @@ router.post('/chat-post', async function (req, res) {
  
 
   switch (search.text) {
-    case 'hlo':
+    case 'hloo':
       response = 'hay'
       break;
     case 'hay':
