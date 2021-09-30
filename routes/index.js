@@ -46,7 +46,7 @@ router.post('/chat-post', async function (req, res) {
       break;
     default:
       if(search.text === 'who is maxwell' ){
-     return data = search.text.replace('who is','');
+     var data = search.text.replace('who is','');
       }
       await wiki()
       .page(data)
