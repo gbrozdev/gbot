@@ -38,6 +38,9 @@ router.post('/chat-post', async function (req, res) {
     case 'your name':
       response = 'gbot'
       break;
+    case 'who is he':
+      response = search.text.replace('who is','');
+      break;
     case 'are you bot?':
       response = 'Yes. Are you mad?'
       break;
